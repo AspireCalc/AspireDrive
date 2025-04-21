@@ -52,7 +52,7 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
         const actions = {
             rename: () => renameFile({ fileId: file.$id, name, extension: file.extension, path }),
             share: () => updatedFileUsers({ fileId: file.$id, emails, path }),
-            delete: () => deleteFile({fileId: file.$id, path, bucketFileId: file.bucketFileId})
+            delete: () => deleteFile({ fileId: file.$id, path, bucketFileId: file.bucketFileId })
         };
 
         success = await actions[action.value as keyof typeof actions]();
@@ -138,11 +138,11 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
                             {actionItem.value === "download"
                                 ? <Link href={constructDownloadUrl(file.bucketFileId)} download={file.name} className="flex items-center gap-2 cursor-pointer">
                                     <Image src={actionItem.icon} alt={actionItem.label} width={20} height={20} />
-                                    <span className="text-brand font-normal px-2">{actionItem.label}</span>
+                                    <span className="text-black font-normal px-2">{actionItem.label}</span>
                                 </Link>
                                 : <div className="flex items-center gap-2 cursor-pointer">
                                     <Image src={actionItem.icon} alt={actionItem.label} width={20} height={20} />
-                                    <span className="text-brand font-normal px-2">{actionItem.label}</span>
+                                    <span className="text-black font-normal px-2">{actionItem.label}</span>
                                 </div>
                             }
                         </DropdownMenuItem>
