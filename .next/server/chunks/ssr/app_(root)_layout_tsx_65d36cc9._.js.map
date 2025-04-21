@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/tushar/Documents/aspiredrive/app/%28root%29/layout.tsx"],"sourcesContent":["import Sidebar from '@/components/sidebar'\nimport React from 'react'\n\nconst layout = ({ children }: { children: React.ReactNode }) => {\n    return (\n        <main className='flex h-screen'>\n            <Sidebar />\n            <section className='flex h-full flex-1 flex-col'>\n                MobileNavigaion\n                Header\n                <div className=\"main-content\">\n                    {children}\n                </div>\n            </section>\n        </main>\n    )\n}\n\nexport default layout"],"names":[],"mappings":";;;;;;;;;;;AAGA,MAAM,SAAS,CAAC,EAAE,QAAQ,EAAiC;IACvD,qBACI,8OAAC;QAAK,WAAU;;0BACZ,8OAAC;;;;;0BACD,8OAAC;gBAAQ,WAAU;;oBAA8B;kCAG7C,8OAAC;wBAAI,WAAU;kCACV;;;;;;;;;;;;;;;;;;AAKrB;uCAEe","debugId":null}}]
-}
