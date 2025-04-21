@@ -1,8 +1,4 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/(auth)/signin/page": "app/(auth)/signin/page.js",
-  "/(auth)/signup/page": "app/(auth)/signup/page.js",
   "/(root)/[type]/page": "app/(root)/[type]/page.js",
   "/(root)/page": "app/(root)/page.js"
 }
