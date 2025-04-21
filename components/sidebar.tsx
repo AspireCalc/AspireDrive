@@ -36,7 +36,7 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
         <aside className="sidebar">
             <Link href="/" className="flex flex-row gap-2">
                 <Image
-                    src="/assets/icons/logo-brand.png"
+                    src="/assets/icons/logo-blue.png"
                     alt="logo"
                     width={52}
                     height={52}
