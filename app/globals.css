@@ -471,7 +471,7 @@
   }
 
   .search-result {
-    @apply absolute left-0 top-16 z-50 flex w-full flex-col gap-3 rounded-[20px] bg-white p-4 !important;
+    @apply absolute left-0 top-16 z-50 flex w-[90vw] translate-x-[-10%] sm:translate-x-0 sm:w-full flex-col gap-3 rounded-[20px] bg-white p-1 !important;
   }
 
   .empty-result {

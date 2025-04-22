@@ -118,8 +118,13 @@ const Search = () => {
                       url={file.url}
                       className="size-9 min-w-9"
                     />
-                    <p className="subtitle-2 line-clamp-1 text-light-100">
-                      {file.name}
+                    <p
+                      className="subtitle-2 text-light-100 truncate max-w-[100%]"
+                      title={file.name + '.' + file.extension} // optional tooltip
+                    >
+                      {file.name.length + file.extension.length + 1 > 30
+                        ? `${file.name.slice(0, 25)}...${file.extension}`
+                        : `${file.name}.${file.extension}`}
                     </p>
                   </div>
 
