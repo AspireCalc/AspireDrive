@@ -1,7 +1,5 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
-
 import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -20,7 +18,23 @@ const Search = () => {
   const router = useRouter();
   const path = usePathname();
   const [debouncedQuery] = useDebounce(query, 300);
-  const [selectedIndex, setSelectedIndex] = useState(-1); 
+  const [selectedIndex, setSelectedIndex] = useState(-1);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      if (window.innerWidth < 640) {
+        setIsMobile(true);
+      } else if (window.innerWidth > 640) {
+        setIsMobile(false);
+      }
+    };
+
+    handleWindowResize();
+
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
 
   useEffect(() => {
     const fetchFiles = async () => {
@@ -68,11 +82,11 @@ const Search = () => {
         handleClickItem(results[selectedIndex]);
       }
     }
-  }
+  };
 
   return (
     <div className="search">
-      <div className="search-input-wrapper">
+      <div className={isMobile ? "mobile-search-wrapper" : "search-input-wrapper"}>
         <Image
           src="/assets/icons/search.svg"
           alt="Search"

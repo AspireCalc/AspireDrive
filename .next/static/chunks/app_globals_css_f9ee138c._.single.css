@@ -713,6 +713,10 @@ body {
   user-select: none;
 }
 
+.resize {
+  resize: both;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1133,10 +1137,6 @@ body {
 
 .text-\[0\.8rem\] {
   font-size: .8rem;
-}
-
-.text-\[22px\] {
-  font-size: 22px;
 }
 
 .text-\[28px\] {
@@ -2326,14 +2326,12 @@ body {
   line-height: 20px;
   --tw-shadow: 0px 10px 30px 0px #4247611a !important;
   --tw-shadow-colored: 0px 10px 30px 0px var(--tw-shadow-color) !important;
-  height: 52px !important;
+  height: 48px !important;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
   --tw-bg-opacity: 1 !important;
   background-color: rgb(86 184 255 / var(--tw-bg-opacity, 1)) !important;
   border-radius: 9999px !important;
   gap: .5rem !important;
-  padding-left: 2.5rem !important;
-  padding-right: 2.5rem !important;
   transition-property: all !important;
   transition-duration: .15s !important;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1) !important;
@@ -2582,6 +2580,17 @@ body {
   flex: 1 !important;
   align-items: center !important;
   gap: .75rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  display: flex !important;
+}
+
+.mobile-search-wrapper {
+  border-radius: 9999px !important;
+  flex: 1 !important;
+  align-items: center !important;
+  gap: .75rem !important;
+  height: 52px !important;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
   display: flex !important;

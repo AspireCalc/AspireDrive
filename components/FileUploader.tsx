@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { Button } from './ui/button';
 import { cn, convertFileToUrl, getFileType } from '@/lib/utils';
@@ -60,7 +60,7 @@ const FileUploader = ({ ownerId, accountId, className }: Props) => {
             <input {...getInputProps()} />
             <Button type='button' className={cn("uploader-button", className)}>
                 <Image src="/assets/icons/upload.svg" alt='upload' width={24} height={24} />
-                <p>Upload</p>
+                <p className='sm:block hidden'>Upload</p>
             </Button>
 
             {files.length > 0 && (

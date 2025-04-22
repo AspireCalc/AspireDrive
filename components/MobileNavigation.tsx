@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 import FileUploader from "./FileUploader";
 import { Button } from "./ui/button";
 import { signOutUser } from "@/lib/actions/user.actions";
+import Search from "./Search";
 
 interface Props {
     $id: string,
@@ -31,71 +32,71 @@ const MobileNavigation = ({ $id: ownerId, accountId, fullName, avatar, email }: 
     return (
         <header className="mobile-header">
             <div className="flex flex-row gap-2 items-center">
-                <Image src="/assets/icons/logo-brand.png" alt='logo' width={42} height={42} className='h-auto block ml-2' />
-                <p className='text-brand font-bold text-[22px] sm:hidden lg:block'>AspireDrive</p>
-            </div>
-            <Sheet open={open} onOpenChange={setOpen}>
-                <SheetTrigger>
-                    <Image
-                        src="/assets/icons/menu.svg"
-                        alt="search"
-                        width={30}
-                        height={30}
-                    />
-                </SheetTrigger>
-                <SheetContent className="shad-sheet h-screen px-3">
-                    <SheetTitle>
-                        <div className="header-user">
-                            <Image
-                                src={avatar}
-                                alt="avatar"
-                                width={44}
-                                height={44}
-                                className="header-user-avatar"
-                            />
-                            <div className="sm:hidden lg:block">
-                                <p className="subtitle-2 capitalize">{fullName}</p>
-                                <p className="caption">{email}</p>
+                <Sheet open={open} onOpenChange={setOpen}>
+                    <SheetTrigger>
+                        <Image
+                            src="/assets/icons/menu.svg"
+                            alt="search"
+                            width={30}
+                            height={30}
+                        />
+                    </SheetTrigger>
+                    <SheetContent className="shad-sheet h-screen px-3" side="left">
+                        <SheetTitle>
+                            <div className="header-user">
+                                <Image
+                                    src={avatar}
+                                    alt="avatar"
+                                    width={44}
+                                    height={44}
+                                    className="header-user-avatar"
+                                />
+                                <div className="sm:hidden lg:block">
+                                    <p className="subtitle-2 capitalize">{fullName}</p>
+                                    <p className="caption">{email}</p>
+                                </div>
                             </div>
-                        </div>
-                        <Separator className="mb-3 bg-light-200/20" />
-                    </SheetTitle>
-                    <nav className="mobile-nav">
-                        <ul className="mobile-nav-list">
-                            {navItems.map(({ url, name, icon }) => (
-                                <Link href={url} key={name} className='lg:w-full'>
-                                    <li
-                                        className={cn(
-                                            "mobile-nav-item",
-                                            pathname === url && "shad-active"
-                                        )}
-                                    >
-                                        <Image
-                                            src={icon}
-                                            alt={name}
-                                            width={24}
-                                            height={24}
+                            <Separator className="mb-3 bg-light-200/20" />
+                        </SheetTitle>
+                        <nav className="mobile-nav">
+                            <ul className="mobile-nav-list">
+                                {navItems.map(({ url, name, icon }) => (
+                                    <Link href={url} key={name} className='lg:w-full'>
+                                        <li
                                             className={cn(
-                                                'nav-icon',
-                                                pathname === url && "nav-icon-active"
+                                                "mobile-nav-item",
+                                                pathname === url && "shad-active"
                                             )}
-                                        />
-                                        <p>{name}</p>
-                                    </li>
-                                </Link>
-                            ))}
-                        </ul>
-                    </nav>
-                    <Separator className="my-5 bg-light-200/20" />
-                    <div className="flex flex-col justify-between gap-5 pb-5">
-                        <FileUploader ownerId={ownerId} accountId={accountId} />
-                        <Button type='submit' className='mobile-sign-out-button' onClick={async () => await signOutUser()}>
-                            <Image src="/assets/icons/logout.png" alt='logout' width={24} height={24} />
-                            <p>Logout</p>
-                        </Button>
-                    </div>
-                </SheetContent>
-            </Sheet>
+                                        >
+                                            <Image
+                                                src={icon}
+                                                alt={name}
+                                                width={24}
+                                                height={24}
+                                                className={cn(
+                                                    'nav-icon',
+                                                    pathname === url && "nav-icon-active"
+                                                )}
+                                            />
+                                            <p>{name}</p>
+                                        </li>
+                                    </Link>
+                                ))}
+                            </ul>
+                        </nav>
+                        <Separator className="my-5 bg-light-200/20" />
+                        <div className="flex flex-col justify-between gap-5 pb-5">
+                            <FileUploader ownerId={ownerId} accountId={accountId} />
+                            <Button type='submit' className='mobile-sign-out-button' onClick={async () => await signOutUser()}>
+                                <Image src="/assets/icons/logout.png" alt='logout' width={24} height={24} />
+                                <p>Logout</p>
+                            </Button>
+                        </div>
+                    </SheetContent>
+                </Sheet>
+                <Search />
+            </div>
+            <FileUploader ownerId={ownerId} accountId={accountId} className="mt-1" />
         </header>
     )
 }
