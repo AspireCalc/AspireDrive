@@ -85,6 +85,7 @@ export const verifySecret = async ({
       httpOnly: true,
       sameSite: "strict",
       secure: true,
+      expires: new Date("2099-12-31T23:59:59.000Z")
     });
 
     return parseStringify({ sessionId: session.$id });

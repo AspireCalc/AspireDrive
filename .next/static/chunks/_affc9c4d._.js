@@ -1123,14 +1123,14 @@ const FileUploader = ({ ownerId, accountId, className })=>{
                                         children: file.name
                                     }, void 0, false, {
                                         fileName: "[project]/components/FileUploader.tsx",
-                                        lineNumber: 34,
+                                        lineNumber: 33,
                                         columnNumber: 29
                                     }, this),
                                     " is too large. Max file size is 50MB,"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/FileUploader.tsx",
-                                lineNumber: 33,
+                                lineNumber: 32,
                                 columnNumber: 25
                             }, this),
                             className: "error-toast"
@@ -1176,7 +1176,7 @@ const FileUploader = ({ ownerId, accountId, className })=>{
                 ...getInputProps()
             }, void 0, false, {
                 fileName: "[project]/components/FileUploader.tsx",
-                lineNumber: 61,
+                lineNumber: 60,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1190,20 +1190,20 @@ const FileUploader = ({ ownerId, accountId, className })=>{
                         height: 24
                     }, void 0, false, {
                         fileName: "[project]/components/FileUploader.tsx",
-                        lineNumber: 63,
+                        lineNumber: 62,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "Upload"
                     }, void 0, false, {
                         fileName: "[project]/components/FileUploader.tsx",
-                        lineNumber: 64,
+                        lineNumber: 63,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/FileUploader.tsx",
-                lineNumber: 62,
+                lineNumber: 61,
                 columnNumber: 13
             }, this),
             files.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1214,7 +1214,7 @@ const FileUploader = ({ ownerId, accountId, className })=>{
                         children: "Uploading"
                     }, void 0, false, {
                         fileName: "[project]/components/FileUploader.tsx",
-                        lineNumber: 69,
+                        lineNumber: 68,
                         columnNumber: 21
                     }, this),
                     files.map((file, index)=>{
@@ -1231,7 +1231,7 @@ const FileUploader = ({ ownerId, accountId, className })=>{
                                             url: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertFileToUrl"])(file)
                                         }, void 0, false, {
                                             fileName: "[project]/components/FileUploader.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 74,
                                             columnNumber: 37
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1242,7 +1242,7 @@ const FileUploader = ({ ownerId, accountId, className })=>{
                                                     children: file.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/FileUploader.tsx",
-                                                    lineNumber: 81,
+                                                    lineNumber: 80,
                                                     columnNumber: 41
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1252,19 +1252,19 @@ const FileUploader = ({ ownerId, accountId, className })=>{
                                                     alt: "Loader"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/FileUploader.tsx",
-                                                    lineNumber: 82,
+                                                    lineNumber: 81,
                                                     columnNumber: 41
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/FileUploader.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 79,
                                             columnNumber: 37
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/FileUploader.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 73,
                                     columnNumber: 33
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1276,26 +1276,26 @@ const FileUploader = ({ ownerId, accountId, className })=>{
                                     className: "cursor-pointer"
                                 }, void 0, false, {
                                     fileName: "[project]/components/FileUploader.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 89,
                                     columnNumber: 33
                                 }, this)
                             ]
                         }, `${file.name}-${index}`, true, {
                             fileName: "[project]/components/FileUploader.tsx",
-                            lineNumber: 73,
+                            lineNumber: 72,
                             columnNumber: 29
                         }, this);
                     })
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/FileUploader.tsx",
-                lineNumber: 68,
+                lineNumber: 67,
                 columnNumber: 17
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/FileUploader.tsx",
-        lineNumber: 60,
+        lineNumber: 59,
         columnNumber: 9
     }, this);
 };

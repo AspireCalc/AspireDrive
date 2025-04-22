@@ -1,5 +1,13 @@
+import { getCurrentUser } from '@/lib/actions/user.actions';
+import { redirect } from 'next/navigation';
 import AuthForm from '@/components/AuthForm';
 
-const SignIn = () => <AuthForm type="sigin" />;
+const SignIn = async () => {
+    const currentUser = await getCurrentUser();
 
-export default SignIn
+    if (currentUser) redirect("/");
+
+    return <AuthForm type="sigin" />;
+};
+
+export default SignIn;
