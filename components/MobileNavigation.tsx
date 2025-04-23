@@ -61,7 +61,12 @@ const MobileNavigation = ({ $id: ownerId, accountId, fullName, avatar, email }: 
                         <nav className="mobile-nav">
                             <ul className="mobile-nav-list">
                                 {navItems.map(({ url, name, icon }) => (
-                                    <Link href={url} key={name} className='lg:w-full'>
+                                    <Link
+                                        href={url}
+                                        key={name}
+                                        className='lg:w-full'
+                                        onClick={() => setOpen(false)} // Close the Sheet when clicked
+                                    >
                                         <li
                                             className={cn(
                                                 "mobile-nav-item",
