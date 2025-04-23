@@ -91,7 +91,6 @@ const MobileNavigation = ({ $id: ownerId, accountId, fullName, avatar, email }: 
                         </nav>
                         <Separator className="my-5 bg-light-200/20" />
                         <div className="flex flex-col justify-between gap-5 pb-5">
-                            <FileUploader ownerId={ownerId} accountId={accountId} />
                             <Button type='submit' className='mobile-sign-out-button' onClick={async () => await signOutUser()}>
                                 <Image src="/assets/icons/logout.png" alt='logout' width={24} height={24} />
                                 <p>Logout</p>
@@ -101,6 +100,7 @@ const MobileNavigation = ({ $id: ownerId, accountId, fullName, avatar, email }: 
                 </Sheet>
                 <Search />
             </div>
+            <FileUploader ownerId={ownerId} accountId={accountId} className="mt-1" />
         </header>
     )
 }
