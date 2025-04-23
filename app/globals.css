@@ -137,7 +137,7 @@
   }
 
   .primary-btn {
-    @apply bg-brand hover:bg-brand-100 transition-all rounded-full button !important;
+    @apply bg-brand hover:bg-[#3da6f0] transition-all rounded-full button !important;
   }
 
   .flex-center {
@@ -170,7 +170,7 @@
   }
 
   .shad-submit-btn {
-    @apply bg-brand button hover:bg-brand-100 transition-all rounded-full !important;
+    @apply bg-brand button hover:bg-[#3da6f0] transition-all rounded-full !important;
   }
 
   .shad-otp {
@@ -219,7 +219,7 @@
 
   /* Root Layout */
   .main-content {
-    @apply remove-scrollbar overflow-hidden h-full flex-1 bg-transparent px-5 py-7 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-9 md:py-10 !important;
+    @apply remove-scrollbar md:overflow-hidden overflow-y-auto overflow-x-hidden h-full flex-1 bg-transparent px-5 py-7 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-9 md:py-10 !important;
   }
 
   /* Dashboard */
