@@ -693,6 +693,33 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
+"[project]/components/OpenWith.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>__TURBOPACK__default__export__)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+;
+const OpenWith = ()=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: "OpenWith"
+    }, void 0, false, {
+        fileName: "[project]/components/OpenWith.tsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, this);
+};
+_c = OpenWith;
+const __TURBOPACK__default__export__ = OpenWith;
+var _c;
+__turbopack_context__.k.register(_c, "OpenWith");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
 "[project]/components/ActionDropdown.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -716,9 +743,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$actions$2f$data$3a$a4
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$actions$2f$data$3a$d6fea4__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/lib/actions/data:d6fea4 [app-client] (ecmascript) <text/javascript>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ActionsModalContent$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ActionsModalContent.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$OpenWith$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/OpenWith.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -788,6 +817,13 @@ const ActionDropdown = ({ file })=>{
         if (success) setEmails(updatedEmails);
         setloadingTrue(false);
     };
+    const openWithContent = ()=>{
+        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$OpenWith$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "[project]/components/ActionDropdown.tsx",
+            lineNumber: 80,
+            columnNumber: 9
+        }, this);
+    };
     const renderDialogContent = ()=>{
         if (!action) return null;
         const { value, label } = action;
@@ -802,7 +838,7 @@ const ActionDropdown = ({ file })=>{
                             children: label
                         }, void 0, false, {
                             fileName: "[project]/components/ActionDropdown.tsx",
-                            lineNumber: 85,
+                            lineNumber: 90,
                             columnNumber: 21
                         }, this),
                         value === "rename" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -811,14 +847,14 @@ const ActionDropdown = ({ file })=>{
                             onChange: (e)=>setName(e.target.value)
                         }, void 0, false, {
                             fileName: "[project]/components/ActionDropdown.tsx",
-                            lineNumber: 87,
+                            lineNumber: 92,
                             columnNumber: 25
                         }, this),
                         value === "details" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ActionsModalContent$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FileDetails"], {
                             file: file
                         }, void 0, false, {
                             fileName: "[project]/components/ActionDropdown.tsx",
-                            lineNumber: 90,
+                            lineNumber: 95,
                             columnNumber: 25
                         }, this),
                         value === "share" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ActionsModalContent$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ShareInput"], {
@@ -828,7 +864,7 @@ const ActionDropdown = ({ file })=>{
                             isLoading: loadingTrue
                         }, void 0, false, {
                             fileName: "[project]/components/ActionDropdown.tsx",
-                            lineNumber: 93,
+                            lineNumber: 98,
                             columnNumber: 25
                         }, this),
                         value === "delete" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -844,19 +880,19 @@ const ActionDropdown = ({ file })=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                    lineNumber: 98,
+                                    lineNumber: 103,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ActionDropdown.tsx",
-                            lineNumber: 96,
+                            lineNumber: 101,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ActionDropdown.tsx",
-                    lineNumber: 84,
+                    lineNumber: 89,
                     columnNumber: 17
                 }, this),
                 [
@@ -872,7 +908,7 @@ const ActionDropdown = ({ file })=>{
                             children: "Cancel"
                         }, void 0, false, {
                             fileName: "[project]/components/ActionDropdown.tsx",
-                            lineNumber: 104,
+                            lineNumber: 109,
                             columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -884,7 +920,7 @@ const ActionDropdown = ({ file })=>{
                                     children: value
                                 }, void 0, false, {
                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                    lineNumber: 108,
+                                    lineNumber: 113,
                                     columnNumber: 29
                                 }, this),
                                 isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -895,25 +931,25 @@ const ActionDropdown = ({ file })=>{
                                     className: "animate-spin"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                    lineNumber: 110,
+                                    lineNumber: 115,
                                     columnNumber: 33
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ActionDropdown.tsx",
-                            lineNumber: 107,
+                            lineNumber: 112,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ActionDropdown.tsx",
-                    lineNumber: 103,
+                    lineNumber: 108,
                     columnNumber: 21
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/ActionDropdown.tsx",
-            lineNumber: 83,
+            lineNumber: 88,
             columnNumber: 13
         }, this);
     };
@@ -935,12 +971,12 @@ const ActionDropdown = ({ file })=>{
                             className: "hover:bg-light-200/30 rounded-[8px] p-1"
                         }, void 0, false, {
                             fileName: "[project]/components/ActionDropdown.tsx",
-                            lineNumber: 123,
+                            lineNumber: 128,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/ActionDropdown.tsx",
-                        lineNumber: 122,
+                        lineNumber: 127,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
@@ -977,7 +1013,7 @@ const ActionDropdown = ({ file })=>{
                                                     className: "ml-2.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                                    lineNumber: 149,
+                                                    lineNumber: 153,
                                                     columnNumber: 45
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -985,13 +1021,13 @@ const ActionDropdown = ({ file })=>{
                                                     children: actionItem.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                                    lineNumber: 150,
+                                                    lineNumber: 154,
                                                     columnNumber: 45
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ActionDropdown.tsx",
-                                            lineNumber: 144,
+                                            lineNumber: 148,
                                             columnNumber: 41
                                         }, this) : isOpenWith ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "w-full flex items-center justify-between cursor-pointer",
@@ -1007,7 +1043,7 @@ const ActionDropdown = ({ file })=>{
                                                             className: "ml-2.5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/ActionDropdown.tsx",
-                                                            lineNumber: 155,
+                                                            lineNumber: 159,
                                                             columnNumber: 49
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1015,13 +1051,13 @@ const ActionDropdown = ({ file })=>{
                                                             children: actionItem.label
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/ActionDropdown.tsx",
-                                                            lineNumber: 156,
+                                                            lineNumber: 160,
                                                             columnNumber: 49
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                                    lineNumber: 154,
+                                                    lineNumber: 158,
                                                     columnNumber: 45
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1032,13 +1068,13 @@ const ActionDropdown = ({ file })=>{
                                                     className: "ml-2.5 mr-2.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                                    lineNumber: 158,
+                                                    lineNumber: 162,
                                                     columnNumber: 45
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ActionDropdown.tsx",
-                                            lineNumber: 153,
+                                            lineNumber: 157,
                                             columnNumber: 41
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center gap-2 cursor-pointer",
@@ -1051,7 +1087,7 @@ const ActionDropdown = ({ file })=>{
                                                     className: "ml-2.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                                    lineNumber: 162,
+                                                    lineNumber: 166,
                                                     columnNumber: 45
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1059,64 +1095,64 @@ const ActionDropdown = ({ file })=>{
                                                     children: actionItem.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                                    lineNumber: 163,
+                                                    lineNumber: 167,
                                                     columnNumber: 45
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ActionDropdown.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 165,
                                             columnNumber: 41
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/ActionDropdown.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 138,
                                         columnNumber: 33
                                     }, this),
                                     isOpenWith && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {
                                         className: "bg-gray-300"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ActionDropdown.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 171,
                                         columnNumber: 48
                                     }, this),
                                     isInfo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {
                                         className: "bg-gray-300"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ActionDropdown.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 172,
                                         columnNumber: 44
                                     }, this),
                                     isRename && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {
                                         className: "bg-gray-300"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ActionDropdown.tsx",
-                                        lineNumber: 169,
+                                        lineNumber: 173,
                                         columnNumber: 46
                                     }, this)
                                 ]
                             }, actionItem.value, true, {
                                 fileName: "[project]/components/ActionDropdown.tsx",
-                                lineNumber: 132,
+                                lineNumber: 137,
                                 columnNumber: 29
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/components/ActionDropdown.tsx",
-                        lineNumber: 125,
+                        lineNumber: 130,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ActionDropdown.tsx",
-                lineNumber: 121,
+                lineNumber: 126,
                 columnNumber: 13
             }, this),
             renderDialogContent()
         ]
     }, void 0, true, {
         fileName: "[project]/components/ActionDropdown.tsx",
-        lineNumber: 120,
+        lineNumber: 125,
         columnNumber: 9
     }, this);
 };
@@ -1430,4 +1466,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }}),
 }]);
 
-//# sourceMappingURL=_cd8967f3._.js.map
+//# sourceMappingURL=_1ea310b9._.js.map
