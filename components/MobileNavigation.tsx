@@ -96,7 +96,6 @@ const MobileNavigation = ({ $id: ownerId, accountId, fullName, avatar, email }: 
                 </Sheet>
                 <Search />
             </div>
-            <FileUploader ownerId={ownerId} accountId={accountId} className="mt-1" />
         </header>
     )
 }
