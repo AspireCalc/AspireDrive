@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/tushar/Documents/aspiredrive/app/%28root%29/%5Btype%5D/loading.tsx"],"sourcesContent":["import React from 'react'\n\nconst Loading = () => {\n    return (\n        <div className=\"loading\">Loading nishant...</div>\n    )\n}\n\nexport default Loading"],"names":[],"mappings":";;;;;AAEA,MAAM,UAAU;IACZ,qBACI,8OAAC;QAAI,WAAU;kBAAU;;;;;;AAEjC;uCAEe","debugId":null}}]
-}
