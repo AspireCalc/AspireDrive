@@ -49,8 +49,12 @@ const handleError = (error, message)=>{
 const uploadFile = async ({ file, ownerId, accountId, path })=>{
     const { storage, databases } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$appwrite$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createAdminClient"])();
     try {
+        // Step 1: Upload file to Appwrite Storage
         const inputFile = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$node$2d$appwrite$2f$dist$2f$inputFile$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["InputFile"].fromBuffer(file, file.name);
         const bucketFile = await storage.createFile(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$appwrite$2f$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["appwriteConfig"].bucketId, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$node$2d$appwrite$2f$dist$2f$id$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ID"].unique(), inputFile);
+        // ✅ Step 2: Get file metadata (for mimeType)
+        const metadata = await storage.getFile(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$appwrite$2f$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["appwriteConfig"].bucketId, bucketFile.$id);
+        // Step 3: Create your file document
         const fileDocument = {
             type: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getFileType"])(bucketFile.name).type,
             name: bucketFile.name,
@@ -60,11 +64,13 @@ const uploadFile = async ({ file, ownerId, accountId, path })=>{
             owner: ownerId,
             accountId,
             users: [],
-            bucketFileId: bucketFile.$id
+            bucketFileId: bucketFile.$id,
+            mimeType: metadata.mimeType
         };
+        // Step 4: Create document in DB
         const newFile = await databases.createDocument(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$appwrite$2f$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["appwriteConfig"].databaseId, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$appwrite$2f$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["appwriteConfig"].fileCollectionId, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$node$2d$appwrite$2f$dist$2f$id$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ID"].unique(), fileDocument).catch(async (error)=>{
             await storage.deleteFile(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$appwrite$2f$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["appwriteConfig"].bucketId, bucketFile.$id);
-            handleError(error, "Failed to create an file document");
+            handleError(error, "Failed to create file document");
         });
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])(path);
         return (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["parseStringify"])(newFile);

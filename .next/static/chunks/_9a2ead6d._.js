@@ -796,9 +796,9 @@ const navItems = [
 ];
 const actionsDropdownItems = [
     {
-        label: "Open with",
+        label: "Open",
         icon: "/assets/icons/open.svg",
-        value: "openWith"
+        value: "open"
     },
     {
         label: "Download",

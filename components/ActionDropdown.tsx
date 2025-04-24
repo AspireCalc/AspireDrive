@@ -122,16 +122,16 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
                 <DropdownMenuTrigger className="shad-no-focus">
                     <Image src="/assets/icons/dots.svg" alt="dots" width={34} height={34} className="hover:bg-light-200/30 rounded-[8px] p-1" />
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-[260px] px-0 py-3 absolute left-[-230px]">
+                <DropdownMenuContent className="w-[260px] px-0 py-3 absolute left-[-230]">
                     {actionsDropdownItems.map((actionItem) => {
-                        const isOpenWith = actionItem.value === "openWith";
+                        const isOpen = actionItem.value === "open";
                         const isRename = actionItem.value === "rename";
                         const isInfo = actionItem.value === "details";
 
                         return (
                             <div key={actionItem.value}>
                                 <DropdownMenuItem
-                                    className="p-2 px-1"
+                                    className="p-2 px-1 rounded-[0]"
                                     onClick={() => {
                                         setAction(actionItem);
                                         if (['rename', 'share', 'delete', 'details'].includes(actionItem.value)) {
@@ -149,13 +149,12 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
                                             <Image src={actionItem.icon} alt={actionItem.label} width={20} height={20} className="ml-2.5" />
                                             <span className="text-black font-normal px-2">{actionItem.label}</span>
                                         </Link>
-                                    ) : isOpenWith ? (
+                                    ) : isOpen ? (
                                         <div className="w-full flex items-center justify-between cursor-pointer">
                                             <div className="flex items-center gap-2">
                                                 <Image src={actionItem.icon} alt={actionItem.label} width={20} height={20} className="ml-2.5" />
                                                 <span className="text-black font-normal px-2">{actionItem.label}</span>
                                             </div>
-                                            <Image src="/assets/icons/openWith.svg" alt={actionItem.label} width={20} height={20} className="ml-2.5 mr-2.5" />
                                         </div>
                                     ) : (
                                         <div className="flex items-center gap-2 cursor-pointer">
@@ -164,7 +163,7 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
                                         </div>
                                     )}
                                 </DropdownMenuItem>
-                                {isOpenWith && <DropdownMenuSeparator className="bg-gray-300" />}
+                                {isOpen && <DropdownMenuSeparator className="bg-gray-300" />}
                                 {isInfo && <DropdownMenuSeparator className="bg-gray-300" />}
                                 {isRename && <DropdownMenuSeparator className="bg-gray-300" />}
                             </div>

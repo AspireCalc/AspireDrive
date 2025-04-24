@@ -1,12 +1,11 @@
-import Link from 'next/link'
-import { Models } from 'node-appwrite'
 import React from 'react'
 import Thumbnail from './Thumbnail'
 import ActionDropdown from './ActionDropdown'
+import { Models } from 'node-appwrite'
 
-const Card = ({ file }: { file: Models.Document }) => {
+const Card = ({ file, onPreview }: { file: Models.Document, onPreview: (file: Models.Document) => void }) => {
     return (
-        <Link href={file.url} target='_blank' className='file-card'>
+        <div className='file-card cursor-pointer' onClick={() => onPreview(file)}>
             <div className="flex flex-row justify-between items-center px-4">
                 <div className="max-w-[70%] overflow-hidden whitespace-nowrap text-ellipsis flex items-center">
                     <span className="truncate">{file.name.replace(/\.[^/.]+$/, '')}</span>
@@ -25,7 +24,7 @@ const Card = ({ file }: { file: Models.Document }) => {
                     />
                 </div>
             </div>
-        </Link>
+        </div>
     )
 }
 

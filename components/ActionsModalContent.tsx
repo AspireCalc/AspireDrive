@@ -1,14 +1,16 @@
 import { Models } from 'node-appwrite'
 import React from 'react'
-import Thumbnail from './Thumbnail'
 import { convertFileSize, formatDateTime } from '@/lib/utils';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import Image from 'next/image';
+import UploadingThumbnail from './UploadingThumbnail';
 
 const ImageThumbnail = ({ file }: { file: Models.Document }) => (
     <div className='file-details-thumbnail'>
-        <Thumbnail type={file.type} extension={file.extension} url={file.url} />
+        <UploadingThumbnail type={file.type} extension={file.extension} url={file.url} className='shadow-md  border border-black' />
+        <span className="subtitle-2 line-clamp-1">{file.name}</span>
+        
     </div>
 )
 

@@ -437,11 +437,11 @@ __turbopack_context__.s({
     "ShareInput": (()=>ShareInput)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Thumbnail$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Thumbnail.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/utils.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/input.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/button.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$UploadingThumbnail$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/UploadingThumbnail.tsx [app-client] (ecmascript)");
 ;
 ;
 ;
@@ -450,16 +450,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 const ImageThumbnail = ({ file })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "file-details-thumbnail",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Thumbnail$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            type: file.type,
-            extension: file.extension,
-            url: file.url
-        }, void 0, false, {
-            fileName: "[project]/components/ActionsModalContent.tsx",
-            lineNumber: 11,
-            columnNumber: 9
-        }, this)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$UploadingThumbnail$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                type: file.type,
+                extension: file.extension,
+                url: file.url,
+                className: "shadow-md  border border-black"
+            }, void 0, false, {
+                fileName: "[project]/components/ActionsModalContent.tsx",
+                lineNumber: 11,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "subtitle-2 line-clamp-1",
+                children: file.name
+            }, void 0, false, {
+                fileName: "[project]/components/ActionsModalContent.tsx",
+                lineNumber: 12,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/components/ActionsModalContent.tsx",
         lineNumber: 10,
         columnNumber: 5
@@ -473,7 +484,7 @@ const DetailRow = ({ label, value })=>/*#__PURE__*/ (0, __TURBOPACK__imported__m
                 children: label
             }, void 0, false, {
                 fileName: "[project]/components/ActionsModalContent.tsx",
-                lineNumber: 17,
+                lineNumber: 19,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -481,13 +492,13 @@ const DetailRow = ({ label, value })=>/*#__PURE__*/ (0, __TURBOPACK__imported__m
                 children: value
             }, void 0, false, {
                 fileName: "[project]/components/ActionsModalContent.tsx",
-                lineNumber: 18,
+                lineNumber: 20,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/ActionsModalContent.tsx",
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 _c1 = DetailRow;
@@ -498,7 +509,7 @@ const FileDetails = ({ file })=>{
                 file: file
             }, void 0, false, {
                 fileName: "[project]/components/ActionsModalContent.tsx",
-                lineNumber: 25,
+                lineNumber: 27,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -509,7 +520,7 @@ const FileDetails = ({ file })=>{
                         value: file.extension
                     }, void 0, false, {
                         fileName: "[project]/components/ActionsModalContent.tsx",
-                        lineNumber: 27,
+                        lineNumber: 29,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DetailRow, {
@@ -517,7 +528,7 @@ const FileDetails = ({ file })=>{
                         value: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["convertFileSize"])(file.size)
                     }, void 0, false, {
                         fileName: "[project]/components/ActionsModalContent.tsx",
-                        lineNumber: 28,
+                        lineNumber: 30,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DetailRow, {
@@ -525,7 +536,7 @@ const FileDetails = ({ file })=>{
                         value: file.owner.fullName
                     }, void 0, false, {
                         fileName: "[project]/components/ActionsModalContent.tsx",
-                        lineNumber: 29,
+                        lineNumber: 31,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DetailRow, {
@@ -533,13 +544,13 @@ const FileDetails = ({ file })=>{
                         value: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatDateTime"])(file.$updatedAt)
                     }, void 0, false, {
                         fileName: "[project]/components/ActionsModalContent.tsx",
-                        lineNumber: 30,
+                        lineNumber: 32,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ActionsModalContent.tsx",
-                lineNumber: 26,
+                lineNumber: 28,
                 columnNumber: 13
             }, this)
         ]
@@ -553,7 +564,7 @@ const ShareInput = ({ file, onInputChange, onRemove, isLoading })=>{
                 file: file
             }, void 0, false, {
                 fileName: "[project]/components/ActionsModalContent.tsx",
-                lineNumber: 47,
+                lineNumber: 49,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -563,12 +574,12 @@ const ShareInput = ({ file, onInputChange, onRemove, isLoading })=>{
                     children: "Share file with other users"
                 }, void 0, false, {
                     fileName: "[project]/components/ActionsModalContent.tsx",
-                    lineNumber: 49,
+                    lineNumber: 51,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ActionsModalContent.tsx",
-                lineNumber: 48,
+                lineNumber: 50,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -578,7 +589,7 @@ const ShareInput = ({ file, onInputChange, onRemove, isLoading })=>{
                 className: "share-input-field"
             }, void 0, false, {
                 fileName: "[project]/components/ActionsModalContent.tsx",
-                lineNumber: 51,
+                lineNumber: 53,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -592,7 +603,7 @@ const ShareInput = ({ file, onInputChange, onRemove, isLoading })=>{
                                 children: "Share with"
                             }, void 0, false, {
                                 fileName: "[project]/components/ActionsModalContent.tsx",
-                                lineNumber: 59,
+                                lineNumber: 61,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -603,13 +614,13 @@ const ShareInput = ({ file, onInputChange, onRemove, isLoading })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/ActionsModalContent.tsx",
-                                lineNumber: 60,
+                                lineNumber: 62,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ActionsModalContent.tsx",
-                        lineNumber: 58,
+                        lineNumber: 60,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -622,7 +633,7 @@ const ShareInput = ({ file, onInputChange, onRemove, isLoading })=>{
                                         children: email
                                     }, void 0, false, {
                                         fileName: "[project]/components/ActionsModalContent.tsx",
-                                        lineNumber: 65,
+                                        lineNumber: 67,
                                         columnNumber: 29
                                     }, this),
                                     !isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -637,12 +648,12 @@ const ShareInput = ({ file, onInputChange, onRemove, isLoading })=>{
                                             className: "remove-icon"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ActionsModalContent.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 70,
                                             columnNumber: 37
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/ActionsModalContent.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 69,
                                         columnNumber: 33
                                     }, this),
                                     isLoading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -655,29 +666,29 @@ const ShareInput = ({ file, onInputChange, onRemove, isLoading })=>{
                                             className: "animate-spin"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ActionsModalContent.tsx",
-                                            lineNumber: 73,
+                                            lineNumber: 75,
                                             columnNumber: 37
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/ActionsModalContent.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 74,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, email, true, {
                                 fileName: "[project]/components/ActionsModalContent.tsx",
-                                lineNumber: 64,
+                                lineNumber: 66,
                                 columnNumber: 25
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/ActionsModalContent.tsx",
-                        lineNumber: 62,
+                        lineNumber: 64,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/ActionsModalContent.tsx",
-                lineNumber: 57,
+                lineNumber: 59,
                 columnNumber: 13
             }, this)
         ]
@@ -944,15 +955,15 @@ const ActionDropdown = ({ file })=>{
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
-                        className: "w-[260px] px-0 py-3 absolute left-[-230px]",
+                        className: "w-[260px] px-0 py-3 absolute left-[-230]",
                         children: __TURBOPACK__imported__module__$5b$project$5d2f$constants$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["actionsDropdownItems"].map((actionItem)=>{
-                            const isOpenWith = actionItem.value === "openWith";
+                            const isOpen = actionItem.value === "open";
                             const isRename = actionItem.value === "rename";
                             const isInfo = actionItem.value === "details";
                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
-                                        className: "p-2 px-1",
+                                        className: "p-2 px-1 rounded-[0]",
                                         onClick: ()=>{
                                             setAction(actionItem);
                                             if ([
@@ -993,50 +1004,37 @@ const ActionDropdown = ({ file })=>{
                                             fileName: "[project]/components/ActionDropdown.tsx",
                                             lineNumber: 144,
                                             columnNumber: 41
-                                        }, this) : isOpenWith ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        }, this) : isOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "w-full flex items-center justify-between cursor-pointer",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex items-center gap-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                            src: actionItem.icon,
-                                                            alt: actionItem.label,
-                                                            width: 20,
-                                                            height: 20,
-                                                            className: "ml-2.5"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/ActionDropdown.tsx",
-                                                            lineNumber: 155,
-                                                            columnNumber: 49
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "text-black font-normal px-2",
-                                                            children: actionItem.label
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/ActionDropdown.tsx",
-                                                            lineNumber: 156,
-                                                            columnNumber: 49
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/ActionDropdown.tsx",
-                                                    lineNumber: 154,
-                                                    columnNumber: 45
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    src: "/assets/icons/openWith.svg",
-                                                    alt: actionItem.label,
-                                                    width: 20,
-                                                    height: 20,
-                                                    className: "ml-2.5 mr-2.5"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/ActionDropdown.tsx",
-                                                    lineNumber: 158,
-                                                    columnNumber: 45
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                                        src: actionItem.icon,
+                                                        alt: actionItem.label,
+                                                        width: 20,
+                                                        height: 20,
+                                                        className: "ml-2.5"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/ActionDropdown.tsx",
+                                                        lineNumber: 155,
+                                                        columnNumber: 49
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "text-black font-normal px-2",
+                                                        children: actionItem.label
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/ActionDropdown.tsx",
+                                                        lineNumber: 156,
+                                                        columnNumber: 49
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/ActionDropdown.tsx",
+                                                lineNumber: 154,
+                                                columnNumber: 45
+                                            }, this)
+                                        }, void 0, false, {
                                             fileName: "[project]/components/ActionDropdown.tsx",
                                             lineNumber: 153,
                                             columnNumber: 41
@@ -1051,7 +1049,7 @@ const ActionDropdown = ({ file })=>{
                                                     className: "ml-2.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                                    lineNumber: 162,
+                                                    lineNumber: 161,
                                                     columnNumber: 45
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1059,13 +1057,13 @@ const ActionDropdown = ({ file })=>{
                                                     children: actionItem.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ActionDropdown.tsx",
-                                                    lineNumber: 163,
+                                                    lineNumber: 162,
                                                     columnNumber: 45
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ActionDropdown.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 160,
                                             columnNumber: 41
                                         }, this)
                                     }, void 0, false, {
@@ -1073,25 +1071,25 @@ const ActionDropdown = ({ file })=>{
                                         lineNumber: 133,
                                         columnNumber: 33
                                     }, this),
-                                    isOpenWith && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {
+                                    isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {
                                         className: "bg-gray-300"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ActionDropdown.tsx",
-                                        lineNumber: 167,
-                                        columnNumber: 48
+                                        lineNumber: 166,
+                                        columnNumber: 44
                                     }, this),
                                     isInfo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {
                                         className: "bg-gray-300"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ActionDropdown.tsx",
-                                        lineNumber: 168,
+                                        lineNumber: 167,
                                         columnNumber: 44
                                     }, this),
                                     isRename && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuSeparator"], {
                                         className: "bg-gray-300"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ActionDropdown.tsx",
-                                        lineNumber: 169,
+                                        lineNumber: 168,
                                         columnNumber: 46
                                     }, this)
                                 ]
