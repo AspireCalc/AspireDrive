@@ -1,3 +1,4 @@
+// components/Sidebar.tsx
 'use client';
 
 import { navItems } from '@/constants';
@@ -5,7 +6,7 @@ import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 interface Props {
     fullName: string;
@@ -15,22 +16,6 @@ interface Props {
 
 const Sidebar = ({ fullName, avatar, email }: Props) => {
     const pathname = usePathname();
-    const [activePath, setActivePath] = useState<string | null>(null);
-    const [isMounted, setIsMounted] = useState(false); // State to track client-side mounting
-
-    useEffect(() => {
-        setIsMounted(true); // Set the component as mounted on the client
-    }, []);
-
-    useEffect(() => {
-        if (isMounted) {
-            setActivePath(pathname); // Update active path only after mount
-        }
-    }, [pathname, isMounted]);
-
-    if (!isMounted) {
-        return null; // Optionally, you can return a loading spinner or a fallback here
-    }
 
     return (
         <aside className="sidebar">
@@ -42,7 +27,9 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
                     height={52}
                     className="h-auto block ml-2"
                 />
-                <p className="text-brand font-bold text-[28px] sm:hidden lg:block">AspireDrive</p>
+                <p className="text-brand font-bold text-[28px] sm:hidden lg:block">
+                    AspireDrive
+                </p>
             </Link>
 
             <nav className="sidebar-nav">
@@ -50,21 +37,15 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
                     {navItems.map(({ url, name, icon }) => (
                         <li
                             key={name}
-                            className={cn(
-                                "sidebar-nav-item",
-                                activePath === url && "shad-active"
-                            )}
+                            className={cn('sidebar-nav-item', pathname === url && 'shad-active')}
                         >
-                            <Link href={url} className="flex gap-2 items-center">
+                            <Link href={url} prefetch className="flex gap-2 items-center">
                                 <Image
                                     src={icon}
                                     alt={name}
                                     width={24}
                                     height={24}
-                                    className={cn(
-                                        "nav-icon",
-                                        activePath === url && "nav-icon-active"
-                                    )}
+                                    className={cn('nav-icon', pathname === url && 'nav-icon-active')}
                                 />
                                 <p className="hidden lg:block">{name}</p>
                             </Link>

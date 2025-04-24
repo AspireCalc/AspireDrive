@@ -1,3 +1,4 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 import { Montserrat } from 'next/font/google';
@@ -23,11 +24,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link id="favicon" rel="icon" href="/assets/light-theme-icon/favicon.ico" />
-        {/* Other head content like meta tags, title, etc. */}
       </head>
       <body className={`${montserrat.variable} font-montserrat antialiased`}>
-        <DynamicFavicon /> {/* Client-side component */}
-        {children}
+        <DynamicFavicon />
+        {children} {/* This will be app/(root)/layout.tsx or page.tsx */}
       </body>
     </html>
   );

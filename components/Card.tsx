@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Thumbnail from './Thumbnail'
 import ActionDropdown from './ActionDropdown'
 import { Models } from 'node-appwrite'
 
 const Card = ({ file, onPreview }: { file: Models.Document, onPreview: (file: Models.Document) => void }) => {
     return (
+
         <div className='file-card cursor-pointer' onClick={() => onPreview(file)}>
             <div className="flex flex-row justify-between items-center px-4">
                 <div className="max-w-[70%] overflow-hidden whitespace-nowrap text-ellipsis flex items-center">

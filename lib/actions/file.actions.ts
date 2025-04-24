@@ -20,9 +20,6 @@ export const uploadFile = async ({ file, ownerId, accountId, path }: UploadFileP
         const inputFile = InputFile.fromBuffer(file, file.name)
         const bucketFile = await storage.createFile(appwriteConfig.bucketId, ID.unique(), inputFile)
 
-        // ✅ Step 2: Get file metadata (for mimeType)
-        const metadata = await storage.getFile(appwriteConfig.bucketId, bucketFile.$id)
-
         // Step 3: Create your file document
         const fileDocument = {
             type: getFileType(bucketFile.name).type,
@@ -34,7 +31,6 @@ export const uploadFile = async ({ file, ownerId, accountId, path }: UploadFileP
             accountId,
             users: [],
             bucketFileId: bucketFile.$id,
-            mimeType: metadata.mimeType, // ✅ Save it!
         }
 
         // Step 4: Create document in DB

@@ -52,8 +52,6 @@ const uploadFile = async ({ file, ownerId, accountId, path })=>{
         // Step 1: Upload file to Appwrite Storage
         const inputFile = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$node$2d$appwrite$2f$dist$2f$inputFile$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["InputFile"].fromBuffer(file, file.name);
         const bucketFile = await storage.createFile(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$appwrite$2f$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["appwriteConfig"].bucketId, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$node$2d$appwrite$2f$dist$2f$id$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ID"].unique(), inputFile);
-        // ✅ Step 2: Get file metadata (for mimeType)
-        const metadata = await storage.getFile(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$appwrite$2f$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["appwriteConfig"].bucketId, bucketFile.$id);
         // Step 3: Create your file document
         const fileDocument = {
             type: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getFileType"])(bucketFile.name).type,
@@ -64,8 +62,7 @@ const uploadFile = async ({ file, ownerId, accountId, path })=>{
             owner: ownerId,
             accountId,
             users: [],
-            bucketFileId: bucketFile.$id,
-            mimeType: metadata.mimeType
+            bucketFileId: bucketFile.$id
         };
         // Step 4: Create document in DB
         const newFile = await databases.createDocument(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$appwrite$2f$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["appwriteConfig"].databaseId, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$appwrite$2f$config$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["appwriteConfig"].fileCollectionId, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$node$2d$appwrite$2f$dist$2f$id$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ID"].unique(), fileDocument).catch(async (error)=>{

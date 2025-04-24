@@ -10,7 +10,6 @@ import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
-    DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
@@ -25,7 +24,6 @@ import { Button } from "./ui/button";
 import { deleteFile, renameFile, updatedFileUsers } from "@/lib/actions/file.actions";
 import { usePathname } from "next/navigation";
 import { FileDetails, ShareInput } from "./ActionsModalContent";
-import { Separator } from "./ui/separator";
 
 const ActionDropdown = ({ file }: { file: Models.Document }) => {
     const [isModelOpen, setIsModelOpen] = useState(false);
