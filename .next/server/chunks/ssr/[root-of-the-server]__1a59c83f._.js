@@ -626,19 +626,9 @@ const navItems = [
 ];
 const actionsDropdownItems = [
     {
-        label: "Rename",
-        icon: "/assets/icons/edit.svg",
-        value: "rename"
-    },
-    {
-        label: "Details",
-        icon: "/assets/icons/info.svg",
-        value: "details"
-    },
-    {
-        label: "Share",
-        icon: "/assets/icons/share.svg",
-        value: "share"
+        label: "Open with",
+        icon: "/assets/icons/open.svg",
+        value: "openWith"
     },
     {
         label: "Download",
@@ -646,9 +636,29 @@ const actionsDropdownItems = [
         value: "download"
     },
     {
-        label: "Delete",
+        label: "Rename",
+        icon: "/assets/icons/edit.svg",
+        value: "rename"
+    },
+    {
+        label: "Share",
+        icon: "/assets/icons/share.svg",
+        value: "share"
+    },
+    {
+        label: "Information",
+        icon: "/assets/icons/info.svg",
+        value: "details"
+    },
+    {
+        label: "Move to trash",
         icon: "/assets/icons/delete.svg",
         value: "delete"
+    },
+    {
+        label: "Delete immediately",
+        icon: "/assets/icons/deleteImm.svg",
+        value: "deleteImm"
     }
 ];
 const sortTypes = [

@@ -122,7 +122,7 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
                 <DropdownMenuTrigger className="shad-no-focus">
                     <Image src="/assets/icons/dots.svg" alt="dots" width={34} height={34} className="hover:bg-light-200/30 rounded-[8px] p-1" />
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-[260px] px-0 py-3 absolute left-[-230]">
+                <DropdownMenuContent className="w-[260px] px-0 py-3 absolute left-[-230px]">
                     {actionsDropdownItems.map((actionItem) => {
                         const isOpenWith = actionItem.value === "openWith";
                         const isRename = actionItem.value === "rename";

@@ -319,12 +319,12 @@ body {
   left: .5rem;
 }
 
-.left-\[50\%\] {
-  left: 50%;
+.left-\[-230px\] {
+  left: -230px;
 }
 
-.left-full {
-  left: 100%;
+.left-\[50\%\] {
+  left: 50%;
 }
 
 .right-0 {
@@ -357,10 +357,6 @@ body {
 
 .top-\[50\%\] {
   top: 50%;
-}
-
-.left-\[-230\] {
-  left: -230px;
 }
 
 .z-10 {
@@ -617,10 +613,6 @@ body {
 
 .w-\[1px\] {
   width: 1px;
-}
-
-.w-\[200px\] {
-  width: 200px;
 }
 
 .w-\[260px\] {
@@ -2970,11 +2962,6 @@ body {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-light-200\/30:hover {
